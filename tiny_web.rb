@@ -4,7 +4,7 @@ host = 'localhost'
 port = 2000
 path = "/index.htm"
 
-request = "GET #{path} HTTP/1.o\r\n\r\n"
+request = "GET #{path} HTTP/1.0\r\n\r\n"
 
 socket = TCPSocket.open(host,port)
 socket.print(request)
